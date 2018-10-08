@@ -2,36 +2,84 @@
   "pages": [
     {
       "path": "/",
-      "title": "Intro page",
+      "title": "Start page",
+      "components": [],
+      "next": [
+        {
+          "path": "/options"
+        }
+      ]
+    },
+    {
+      "path": "/options",
+      "title": "Do you want to register, renew, or or change details?",
+      "components": [
+        {
+          "options": {
+            "list": "startrenewchange",
+            "bold": true
+          },
+          "type": "RadiosField",
+          "name": "selectTask",
+          "title": "What do you want to do?",
+          "schema": {}
+        }
+      ],
+      "next": [
+        {
+          "path": "/enter-reg"
+        }
+      ]
+    },
+    {
+      "path": "/enter-reg",
+      "title": "Enter registration number",
+      "components": [
+        {
+          "type": "InsetText",
+          "content": "This was issued when you initially registered and can be found on any correspondence from us.",
+          "options": {},
+          "schema": {}
+        },
+        {
+          "options": {
+            "classes": "govuk-input--width-10"
+          },
+          "type": "TextField",
+          "name": "enterReg",
+          "title": "Reference number",
+          "hint": "For example, AAA/BC1234DE/F001",
+          "schema": {}
+        }
+      ],
+      "next": [
+        {
+          "path": "/magicLink"
+        }
+      ]
+    },
+    {
+      "path": "/magicLink",
+      "title": "We have sent you an email",
       "components": [
         {
           "type": "Para",
-          "content": "On this page describe the service, why they would need to use the service and the questions/tasks they'll be asked.<br/>Also include any documentation or information they could need to hand.",
+          "content": "You have been sent an email to the address you used when originally registering. It will contain a link to allow you to access the renewals service.",
           "options": {},
           "schema": {}
         }
       ],
       "next": [
         {
-          "path": "/full-name"
+          "path": "/check-details"
         }
       ]
     },
     {
-      "path": "/full-name",
-      "components": [
-        {
-          "schema": {
-            "max": 70
-          },
-          "type": "TextField",
-          "name": "fullName",
-          "title": "Full name",
-          "hint": "Some help please...",
-          "options": {}
-        }
-      ],
-      "section": "checkBeforeStart"
+      "path": "/check-details",
+      "title": "Check your details",
+      "components": [],
+      "next": []
     }
   ],
   "sections": [
@@ -69,6 +117,28 @@
         {
           "text": "Other",
           "value": "other"
+        }
+      ]
+    },
+    {
+      "name": "startrenewchange",
+      "title": "wastetodo",
+      "type": "string",
+      "items": [
+        {
+          "text": "Start a new waste exemption registration",
+          "value": "start",
+          "description": ""
+        },
+        {
+          "text": "Renew an exemption that's expiring soon",
+          "value": "renew",
+          "description": ""
+        },
+        {
+          "text": "Change the details of an existing registration",
+          "value": "change",
+          "description": ""
         }
       ]
     }
