@@ -2,13 +2,23 @@
   "pages": [
     {
       "path": "/",
-      "title": "Start page",
-      "components": [],
-      "next": [
+      "title": "Register your waste exemptions: environmental permits (England)",
+      "components": [
         {
-          "path": "/options"
+          "type": "Para",
+          "content": "How to register or renew a waste exemption, including agricultural waste, WEEE, bulk exemptions and linear networks.",
+          "options": {},
+          "schema": {}
+        },
+        {
+          "type": "Html",
+          "content": "<div class=\"govuk-prose-scope\">\r\n<div class=\"gem-c-govspeak govuk-govspeak direction-ltr\">\r\n<p>You may need an environmental permit if your business uses, treats, recovers, stores or disposes of waste.</p>\r\n<p>Some waste operations are exempt from needing a permit and can operate under a waste exemption instead.</p>\r\n<p>If you’ve read the guidance to check your waste operation meets all the limits and conditions of an exemption, then:</p>\r\n<ul>\r\n  <li>check you have all the <a href=\"#info\">right information ready</a> before you start your registration</li>\r\n  <li>start to <a rel=\"external\" href=\"https://wasteexemptions.service.gov.uk/\">register or renew (also known as re-register) your waste exemptions online</a> for your site in England</li>\r\n  <li>leave us feedback so we can improve the service</li>\r\n</ul>\r\n\r\n<p>There’s a different service in <a rel=\"external\" href=\"http://naturalresources.wales/permits-and-permissions/waste/register-your-waste-exemptions/?lang=en\">Wales</a>, <a rel=\"external\" href=\"http://www.sepa.org.uk/regulations/waste/\">Scotland</a> and <a rel=\"external\" href=\"https://www.daera-ni.gov.uk/topics/waste\">Northern Ireland</a>.</p>\r\n\r\n<h2 id=\"before-you-register\">Before you register</h2>\r\n\r\n<h3 id=\"meet-the-waste-exemption-general-rules\">Meet the waste exemption general rules</h3>\r\n\r\n<p>You must register your waste exemption(s).</p>\r\n\r\n<p>You can only register a waste exemption if your waste operation:</p>\r\n\r\n<ul>\r\n  <li>meets all the limits and conditions of an exemption</li>\r\n  <li>does not harm the environment or human health</li>\r\n</ul>\r\n\r\n<p>If you do not follow these rules your waste operation is not exempt and the Environment Agency can ‘de-register’ your exemption.</p>\r\n\r\n<p>It may also take enforcement action or prosecute you if you do not meet the limits and conditions of an exemption or if you’ve harmed people or the environment.</p>\r\n\r\n<p>If you cannot meet the limits and conditions of an exemption you must <a href=\"https://www.gov.uk/guidance/check-if-you-need-an-environmental-permit\">apply for an environmental permit</a>.</p>\r\n\r\n<h3 id=\"choose-the-right-exemption\">Choose the right exemption</h3>\r\n\r\n<p>You must read the waste exemptions guidance to:</p>\r\n\r\n<ul id=\"before-you-register\">\r\n  <li>decide which waste exemptions apply to your operations</li>\r\n  <li>check you can meet all the limits and conditions set</li>\r\n</ul>\r\n\r\n<p>The exemptions guidance categories are:</p>\r\n\r\n<ul>\r\n  <li><a href=\"https://www.gov.uk/government/collections/waste-exemptions-using-waste\">using waste</a></li>\r\n  <li><a href=\"https://www.gov.uk/government/collections/waste-exemptions-treating-waste\">treating waste</a></li>\r\n  <li><a href=\"https://www.gov.uk/government/collections/waste-exemptions-disposing-of-waste\">disposing of waste</a></li>\r\n  <li><a href=\"https://www.gov.uk/government/collections/waste-exemptions-storing-waste\">storing waste</a></li>\r\n</ul>\r\n\r\n<p>To register the T11 exemption to treat <abbr title=\"waste electrical and electronic equipment\">WEEE</abbr> (waste electrical and electronic equipment) you need to use a <a href=\"#register-t11-weee-exemption\">different form</a>.</p>\r\n\r\n<h3 id=\"info\">Have the information you’ll need ready to register online</h3>\r\n\r\n<p>To complete your online registration you’ll need the:</p>\r\n\r\n<ul>\r\n  <li>number and description for each waste exemption you want to register (for example, U1 - use of waste in construction) - you can find these in the <a href=\"#before-you-register\">exemption guidance</a>\r\n</li>\r\n  <li>name and address of the individual, business or organisation that will be carrying out the waste operations</li>\r\n  <li>registration number and registered address details if you’re registering waste exemptions for a limited company or limited liability partnership</li>\r\n  <li>name and address of the person who will be sent the registration confirmation</li>\r\n  <li>address and postcode for all the locations where the exempt activity is being carried out, or a <a rel=\"external\" href=\"http://gridreferencefinder.com/\">12-digit National Grid reference</a> if there is no postcode</li>\r\n</ul>\r\n\r\n<h2 id=\"how-much-an-exemption-costs\">How much an exemption costs</h2>\r\n\r\n<p>It’s free to register all waste exemptions except for a T11 <abbr title=\"waste electrical and electronic equipment\">WEEE</abbr> exemption which costs £1,221.</p>\r\n\r\n<h2 id=\"how-long-an-exemption-lasts\">How long an exemption lasts</h2>\r\n\r\n<p>Each waste exemption registration lasts 3 years so you’ll need to re-register the exemption if you’re still carrying out that waste operation after 3 years.</p>\r\n\r\n<h2 id=\"additional-requirements\">Additional requirements</h2>\r\n\r\n<p>You may also need to get <a rel=\"external\" href=\"http://www.planningportal.gov.uk/\">planning permission</a> if you’re carrying out an exempt waste operation.</p>\r\n\r\n<div style=\"margin: 2em 0; background-color: #dee0e2; padding: 2em;\">\r\n<p>Start to <a rel=\"external\" href=\"/options\">register or renew (also known as re-register) your waste exemptions online</a> for your site in England. Please provide feedback on the service so we can keep improving it.</p>\r\n</div>\r\n\r\n<h2 id=\"when-you-do-not-need-to-register\">When you do not need to register</h2>\r\n\r\n<p>You do not need to register the 3 <a href=\"https://www.gov.uk/government/collections/waste-exemptions-storing-waste#non-waste-framework-directive-exemptions\">non waste framework directive exemptions</a> covering the temporary storage of waste, but you must follow the limits and conditions they set out.</p>\r\n\r\n<h2 id=\"register-t11-weee-exemption\">Register T11 <abbr title=\"waste electrical and electronic equipment\">WEEE</abbr> exemption</h2>\r\n<p>The T11 exemption to treat <abbr title=\"waste electrical and electronic equipment\">WEEE</abbr> cannot be registered online.</p>\r\n\r\n<p>Instead, you’ll need to fill in <a href=\"https://www.gov.uk/government/publications/form-wex001-registering-exempt-waste-operations\">form WEEEX001</a> and send it to the Environment Agency address on the form.</p>\r\n\r\n<p>It costs £1,221 to register and you can pay by:</p>\r\n\r\n<ul>\r\n  <li>credit or debit card - complete <a href=\"https://www.gov.uk/government/publications/form-cc1-environmental-permit-card-payments\">form CC1</a> and send it with your registration form</li>\r\n  <li>cheque</li>\r\n  <li>electronic transfer</li>\r\n</ul>\r\n\r\n<h2 id=\"register-bulk-waste-exemptions-at-multiple-sites\">Register bulk waste exemptions at multiple sites</h2>\r\n\r\n<p>A multiple or bulk registration lets you register the same exemption at more than 30 sites.</p>\r\n\r\n<p>To register your site in England, you need to complete the <a href=\"https://www.gov.uk/government/publications/waste-exemptions-bulk-registration-form\">bulk registration part of this spreadsheet</a> and email it to <a href=\"mailto:enquiries@environment-agency.gov.uk\">enquiries@environment-agency.gov.uk</a>.</p>\r\n\r\n<h2 id=\"register-linear-networks\">Register linear networks</h2>\r\n\r\n<p>In most cases, an exempt waste operation happens at a place you can define by a single postcode or grid reference. If it takes place on a stretch of road, river, canal or railway (a linear network) you may not be able to pinpoint the activity to one place.</p>\r\n\r\n<p>A linear network registration allows you to register U1, U12, D1 and D2 exemptions when you cannot pinpoint the location of your waste operation to a defined postcode or grid reference.</p>\r\n\r\n<p>To register, you need to complete the <a href=\"https://www.gov.uk/government/publications/waste-exemptions-bulk-registration-form\">linear network registration part of this spreadsheet</a> and email it to <a href=\"mailto:enquiries@environment-agency.gov.uk\">enquiries@environment-agency.gov.uk</a>.</p>\r\n\r\n<p>Find out more about how the Environment Agency defines <a href=\"https://www.gov.uk/government/publications/the-meaning-of-place-under-the-new-waste-exemption-system\">one place</a> for a waste exemption registration.</p>\r\n\r\n<h2 id=\"contact\">Contact</h2>\r\n\r\n<p>Contact the Environment Agency if you have queries about waste exemptions or need help registering.</p>\r\n\r\n<div class=\"contact postal-address\" id=\"contact_144\">\r\n  <div class=\"content\">\r\n    <h3>General enquiries</h3>\r\n\r\n    <div class=\"vcard contact-inner\">\r\n        <p class=\"adr\">\r\n<span class=\"fn\">National Customer Contact Centre</span><br>\r\n<span class=\"street-address\">PO Box 544</span><br>\r\n<span class=\"locality\">Rotherham</span><br>\r\n<span class=\"postal-code\">S60 1BY</span>\r\n</p>\r\n\r\n\r\n        <div class=\"email-url-number\">\r\n            <p class=\"email\">\r\n              <span class=\"type\">Email</span>\r\n              <a class=\"email\" href=\"mailto:enquiries@environment-agency.gov.uk\">enquiries@environment-agency.gov.uk</a>\r\n            </p>\r\n            <p class=\"tel\">\r\n              <span class=\"type\">Telephone</span>\r\n              03708 506 506\r\n            </p>\r\n            <p class=\"tel\">\r\n              <span class=\"type\">Telephone from outside the UK (Monday to Friday, 8am to 6pm GMT)</span>\r\n              +44 (0) 114 282 5312\r\n            </p>\r\n        </div>\r\n\r\n        <p class=\"comments\">Monday to Friday, 8am to 6pm</p>\r\n\r\n    </div>\r\n  </div>\r\n</div>",
+          "options": {},
+          "schema": {}
         }
-      ]
+      ],
+      "next": [],
+      "section": "guidance"
     },
     {
       "path": "/options",
@@ -27,7 +37,12 @@
       ],
       "next": [
         {
-          "path": "/enter-reg"
+          "path": "/enter-reg",
+          "if": "selectTask==2"
+        },
+        {
+          "path": "/contact-ea",
+          "if": "selectTask==3"
         }
       ]
     },
@@ -69,16 +84,25 @@
           "schema": {}
         }
       ],
-      "next": [
-        {
-          "path": "/check-details"
-        }
-      ]
+      "next": []
     },
     {
       "path": "/check-details",
-      "title": "Check your details",
+      "title": "Check details and renew",
       "components": [],
+      "next": []
+    },
+    {
+      "path": "/contact-ea",
+      "title": "Contact the Environment Agency",
+      "components": [
+        {
+          "type": "Html",
+          "content": "<div class=\"govuk-prose-scope\">\r\n<p>If you need to:</p>\r\n  <ul class=\"list-bullet\">\r\n      <li>change your contact details</li>\r\n      <li>de-register an activity</li>\r\n      <li>ask questions about your registration</li>\r\n  </ul>\r\n  <p>Call our helpline on  <a href=\"tel:+443708506506\">03708 506506</a></p>\r\n</div>",
+          "options": {},
+          "schema": {}
+        }
+      ],
       "next": []
     }
   ],
@@ -86,6 +110,10 @@
     {
       "name": "checkBeforeStart",
       "title": "Check before you start"
+    },
+    {
+      "name": "guidance",
+      "title": "Guidance"
     }
   ],
   "lists": [
@@ -123,22 +151,22 @@
     {
       "name": "startrenewchange",
       "title": "wastetodo",
-      "type": "string",
+      "type": "number",
       "items": [
         {
           "text": "Start a new waste exemption registration",
-          "value": "start",
-          "description": ""
+          "value": 1,
+          "description": "Begin the process of registering for an exemption"
         },
         {
           "text": "Renew an exemption that's expiring soon",
-          "value": "renew",
-          "description": ""
+          "value": 2,
+          "description": "Apply for a renewal to your existing exemption if the details - including your personal and company information - have not changed"
         },
         {
           "text": "Change the details of an existing registration",
-          "value": "change",
-          "description": ""
+          "value": 3,
+          "description": "Contact us to amend existing details"
         }
       ]
     }
