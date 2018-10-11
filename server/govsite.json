@@ -121,6 +121,10 @@
       "next": [
         {
           "path": "/declaration"
+        },
+        {
+          "path": "/incorrect-details",
+          "if": "CorrectDetails==false"
         }
       ]
     },
@@ -165,6 +169,16 @@
       "title": "Declaration",
       "components": [],
       "next": []
+    },
+    {
+      "path": "/incorrect-details",
+      "title": "Change details",
+      "components": [],
+      "next": [
+        {
+          "path": "/contact-ea"
+        }
+      ]
     }
   ],
   "sections": [
