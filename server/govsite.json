@@ -43,6 +43,10 @@
         {
           "path": "/contact-ea",
           "if": "selectTask==3"
+        },
+        {
+          "path": "/applicant-contact",
+          "if": "selectTask==1"
         }
       ]
     },
@@ -75,22 +79,50 @@
     },
     {
       "path": "/magicLink",
-      "title": "We have sent you an email",
+      "title": "Check your email",
       "components": [
         {
           "type": "Para",
-          "content": "You have been sent an email to the address you used when originally registering. It will contain a link to allow you to access the renewals service.",
+          "content": "We’ve sent an email to: <a href=\"#\">name.surname@email.co.uk</a>",
+          "options": {},
+          "schema": {}
+        },
+        {
+          "type": "Html",
+          "content": "<div class=\"govuk-prose-scope\">\r\n<h2>Next steps</h2>\r\n<ul>\r\n<li>Check your email and follow the instructions to log in.</li>\r\n<li>If you can’t see an email from us, please check your Bulk folder</li>\r\n</ul>\r\n\r\n<h3>I no longer have access to this email address</h3>\r\n<p>Call the Environment Agency helpline on 0800 1111 1111 (Monday to Friday, 8am to 6pm) to update your account.</p>\r\n\r\n<h3>I did not get an email</h3>\r\n<a href=\"#\">Resend email</a>\r\n<br /><br />\r\n</div>",
           "options": {},
           "schema": {}
         }
       ],
-      "next": []
+      "next": [
+        {
+          "path": "/check-details"
+        }
+      ]
     },
     {
       "path": "/check-details",
       "title": "Check details and renew",
-      "components": [],
-      "next": []
+      "components": [
+        {
+          "type": "Html",
+          "content": "<div class=\"govuk-prose-scope\">\r\n<table summary=\"check-details-summary-0\"\r\n         class=\"summary-table\" role=\"presentation\"\r\n         id=\"check-details-yourcontactdetails-0\"\r\n         caption=\"summary of registration details\">\r\n    <tbody>\r\n    <tr role=\"row\">\r\n      <th colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Your contact details</th>\r\n    </tr>\r\n      <tr>\r\n        \r\n        <td>Your name</td>\r\n        <td class=\"table-data\">\r\n              James Devon\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td>Your business telephone number</td>\r\n        <td class=\"table-data\">\r\n              01225312412\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td>Your business email</td>\r\n        <td class=\"table-data\">\r\n              j.devon@aspire.net\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <table summary=\"check-details-summary-1\"\r\n         class=\"summary-table\" role=\"presentation\"\r\n         id=\"check-details-businessdetails-1\"\r\n         caption=\"summary of registration details\">\r\n    <tbody>\r\n\r\n    <tr role=\"row\">\r\n      <th colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Business details</th>\r\n    </tr>\r\n\r\n      <tr>\r\n        \r\n        <td>Business or organisation type</td>\r\n        <td class=\"table-data\">\r\n              Individual\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        \r\n        <td>Person responsible for the waste operation</td>\r\n        <td class=\"table-data\">\r\n              jo ss\r\n        </td>\r\n      </tr>\r\n      <tr>  \r\n        <td>Address of the person responsible</td>\r\n        <td class=\"table-data\">\r\n          <div class=\"single-line_address\">DEANERY ROAD, BRISTOL, BS1 5AH</div>\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <table summary=\"check-details-summary-2\"\r\n         class=\"summary-table\" role=\"presentation\"\r\n         id=\"check-details-wasteoperationcontact-2\"\r\n         caption=\"summary of registration details\">\r\n    <tbody>\r\n\r\n    <tr role=\"row\">\r\n      <th colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Waste operation contact</th>\r\n    </tr>\r\n\r\n      <tr>\r\n        \r\n        <td>Name</td>\r\n        <td class=\"table-data\">\r\n              jo ss\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n      </tr>\r\n      <tr>   \r\n        <td>Telephone number</td>\r\n        <td class=\"table-data\">\r\n              01179488422\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td>Address</td>\r\n        <td class=\"table-data\">\r\n          <div class=\"single-line_address\">44, DEANERY ROAD, BRISTOL, BS1 5AH</div>\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td>Email</td>\r\n        <td class=\"table-data\">\r\n              example.email@inter.net\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <table summary=\"check-details-summary-3\"\r\n         class=\"summary-table\" role=\"presentation\"\r\n         id=\"check-details-wasteoperationdetails-3\"\r\n         caption=\"summary of registration details\">\r\n    <tbody>\r\n\r\n    <tr role=\"row\">\r\n      <th colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Waste operation details</th>\r\n    </tr>\r\n\r\n      <tr>\r\n        \r\n        <td>Waste operation location</td>\r\n        <td class=\"table-data\">\r\n          <div class=\"single-line_address\">DEANERY ROAD, BRISTOL, BS1 5AH</div>\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n      </tr>\r\n      <tr>\r\n      </tr>\r\n      <tr>\r\n        <td>Waste exemption</td>\r\n        <td class=\"table-data\">\r\n              S2: Storing waste in a secure place\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td>Waste exemption</td>\r\n        <td class=\"table-data\">\r\n              U9: Using waste to manufacture finished goods\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n<br /><br />\r\n</div>",
+          "options": {},
+          "schema": {}
+        },
+        {
+          "type": "YesNoField",
+          "name": "CorrectDetails",
+          "title": "Are these details correct?",
+          "options": {},
+          "schema": {}
+        }
+      ],
+      "next": [
+        {
+          "path": "/declaration"
+        }
+      ]
     },
     {
       "path": "/contact-ea",
@@ -103,6 +135,35 @@
           "schema": {}
         }
       ],
+      "next": []
+    },
+    {
+      "path": "/applicant-contact",
+      "title": "What are your contact details?",
+      "components": [
+        {
+          "type": "TextField",
+          "name": "fullName",
+          "title": "Your full name",
+          "hint": "For example, John Smith",
+          "options": {},
+          "schema": {}
+        },
+        {
+          "type": "TextField",
+          "name": "businessTel",
+          "title": "Your business telephone number",
+          "hint": "This can be a landline or mobile",
+          "options": {},
+          "schema": {}
+        }
+      ],
+      "next": []
+    },
+    {
+      "path": "/declaration",
+      "title": "Declaration",
+      "components": [],
       "next": []
     }
   ],
