@@ -66,7 +66,7 @@
           },
           "type": "TextField",
           "name": "enterReg",
-          "title": "Reference number",
+          "title": "Waste exemption registration number",
           "hint": "For example, AAA/BC1234DE/F001",
           "schema": {}
         }
@@ -83,13 +83,33 @@
       "components": [
         {
           "type": "Para",
-          "content": "We’ve sent an email to: <a href=\"#\">name.surname@email.co.uk</a>",
+          "content": "We’ve sent an email to: <a href=\"#\">n**********e@email.co.uk</a>",
           "options": {},
           "schema": {}
         },
         {
           "type": "Html",
-          "content": "<div class=\"govuk-prose-scope\">\r\n<h2>Next steps</h2>\r\n<ul>\r\n<li>Check your email and follow the instructions to log in.</li>\r\n<li>If you can’t see an email from us, please check your Bulk folder</li>\r\n</ul>\r\n\r\n<h3>I no longer have access to this email address</h3>\r\n<p>Call the Environment Agency helpline on 0800 1111 1111 (Monday to Friday, 8am to 6pm) to update your account.</p>\r\n\r\n<h3>I did not get an email</h3>\r\n<a href=\"#\">Resend email</a>\r\n<br /><br />\r\n</div>",
+          "content": "<div class=\"govuk-prose-scope\">\r\n<h2>Next steps</h2>\r\n<ul>\r\n<li>Check your email and follow the instructions to log in.</li>\r\n<li>If you can’t see an email from us, please check your Junk folder</li>\r\n</ul>\r\n</div>",
+          "options": {},
+          "schema": {}
+        },
+        {
+          "type": "Details",
+          "title": "I no longer have access to this email address",
+          "content": "Call the Environment Agency helpline on 0800 1111 1111 (Monday to Friday, 8am to 6pm) to update your account.",
+          "options": {},
+          "schema": {}
+        },
+        {
+          "type": "Details",
+          "title": "I did not get an email",
+          "content": "<a href=\"#\">Resend email</a>",
+          "options": {},
+          "schema": {}
+        },
+        {
+          "type": "Para",
+          "content": "CONTINUE BUTTON EMULATES CLINKING LINK IN EMAIL",
           "options": {},
           "schema": {}
         }
@@ -106,7 +126,7 @@
       "components": [
         {
           "type": "Html",
-          "content": "<div class=\"govuk-prose-scope\">\r\n<table summary=\"check-details-summary-0\"\r\n         class=\"summary-table\" role=\"presentation\"\r\n         id=\"check-details-yourcontactdetails-0\"\r\n         caption=\"summary of registration details\">\r\n    <tbody>\r\n    <tr role=\"row\">\r\n      <th colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Your contact details</th>\r\n    </tr>\r\n      <tr>\r\n        \r\n        <td>Your name</td>\r\n        <td class=\"table-data\">\r\n              James Devon\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td>Your business telephone number</td>\r\n        <td class=\"table-data\">\r\n              01225312412\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td>Your business email</td>\r\n        <td class=\"table-data\">\r\n              j.devon@aspire.net\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <table summary=\"check-details-summary-1\"\r\n         class=\"summary-table\" role=\"presentation\"\r\n         id=\"check-details-businessdetails-1\"\r\n         caption=\"summary of registration details\">\r\n    <tbody>\r\n\r\n    <tr role=\"row\">\r\n      <th colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Business details</th>\r\n    </tr>\r\n\r\n      <tr>\r\n        \r\n        <td>Business or organisation type</td>\r\n        <td class=\"table-data\">\r\n              Individual\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        \r\n        <td>Person responsible for the waste operation</td>\r\n        <td class=\"table-data\">\r\n              jo ss\r\n        </td>\r\n      </tr>\r\n      <tr>  \r\n        <td>Address of the person responsible</td>\r\n        <td class=\"table-data\">\r\n          <div class=\"single-line_address\">DEANERY ROAD, BRISTOL, BS1 5AH</div>\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <table summary=\"check-details-summary-2\"\r\n         class=\"summary-table\" role=\"presentation\"\r\n         id=\"check-details-wasteoperationcontact-2\"\r\n         caption=\"summary of registration details\">\r\n    <tbody>\r\n\r\n    <tr role=\"row\">\r\n      <th colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Waste operation contact</th>\r\n    </tr>\r\n\r\n      <tr>\r\n        \r\n        <td>Name</td>\r\n        <td class=\"table-data\">\r\n              jo ss\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n      </tr>\r\n      <tr>   \r\n        <td>Telephone number</td>\r\n        <td class=\"table-data\">\r\n              01179488422\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td>Address</td>\r\n        <td class=\"table-data\">\r\n          <div class=\"single-line_address\">44, DEANERY ROAD, BRISTOL, BS1 5AH</div>\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td>Email</td>\r\n        <td class=\"table-data\">\r\n              example.email@inter.net\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <table summary=\"check-details-summary-3\"\r\n         class=\"summary-table\" role=\"presentation\"\r\n         id=\"check-details-wasteoperationdetails-3\"\r\n         caption=\"summary of registration details\">\r\n    <tbody>\r\n\r\n    <tr role=\"row\">\r\n      <th colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Waste operation details</th>\r\n    </tr>\r\n\r\n      <tr>\r\n        \r\n        <td>Waste operation location</td>\r\n        <td class=\"table-data\">\r\n          <div class=\"single-line_address\">DEANERY ROAD, BRISTOL, BS1 5AH</div>\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n      </tr>\r\n      <tr>\r\n      </tr>\r\n      <tr>\r\n        <td>Waste exemption</td>\r\n        <td class=\"table-data\">\r\n              S2: Storing waste in a secure place\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td>Waste exemption</td>\r\n        <td class=\"table-data\">\r\n              U9: Using waste to manufacture finished goods\r\n        </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n<br /><br />\r\n</div>",
+          "content": "<table summary=\"check-details-summary-0\"\r\n         class=\"govuk-table summary-table\" role=\"presentation\"\r\n         id=\"check-details-yourcontactdetails-0\"\r\n         caption=\"summary of registration details\">\r\n    <tbody class=\"govuk-table__body\">\r\n      <tr class=\"govuk-table__row\" role=\"row\">\r\n        <th class=\"govuk-table__header\" colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Your contact details</th>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"govuk-table__cell\">Your name</td>\r\n        <td  class=\"govuk-table__cell\">James Devon</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Your business telephone number</td>\r\n        <td class=\"govuk-table__cell\">0117923443</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Your business email</td>\r\n        <td  class=\"govuk-table__cell\">j.devon@aspirewaste.net</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <table summary=\"check-details-summary-1\"\r\n         class=\"govuk-table summary-table\" role=\"presentation\"\r\n         id=\"check-details-businessdetails-1\"\r\n         caption=\"summary of registration details\">\r\n    <tbody class=\"govuk-table__body\">\r\n      <tr class=\"govuk-table__row\" role=\"row\">\r\n        <th class=\"govuk-table__header\" colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Business details</th>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\"> \r\n        <td class=\"govuk-table__cell\">Business or organisation type</td>\r\n        <td class=\"govuk-table__cell\">Individual</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Person responsible for the waste operation</td>\r\n        <td class=\"govuk-table__cell\">Jo Miller</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">  \r\n        <td class=\"govuk-table__cell\">Address of the person responsible</td>\r\n        <td class=\"govuk-table__cell\">Deanery Road, Bristol, BS1 5AH</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <table summary=\"check-details-summary-2\"\r\n         class=\"govuk-table summary-table\" role=\"presentation\"\r\n         id=\"check-details-wasteoperationcontact-2\"\r\n         caption=\"summary of registration details\">\r\n    <tbody class=\"govuk-table__body\">\r\n      <tr class=\"govuk-table__row\" role=\"row\">\r\n        <th class=\"govuk-table__header\" colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Waste operation contact</th>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Name</td>\r\n        <td class=\"govuk-table__cell\">Sarah Miller</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">   \r\n        <td class=\"govuk-table__cell\">Telephone number</td>\r\n        <td class=\"govuk-table__cell\">01179488422</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Address</td>\r\n        <td class=\"govuk-table__cell\">44, Deanery Road, Bristol, BS1 5AH</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Email</td>\r\n        <td class=\"govuk-table__cell\">example.email@inter.net</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <table summary=\"check-details-summary-3\"\r\n         class=\"govuk-table summary-table\" role=\"presentation\"\r\n         id=\"check-details-wasteoperationdetails-3\"\r\n         caption=\"summary of registration details\">\r\n    <tbody class=\"govuk-table__body\">\r\n      <tr class=\"govuk-table__row\"role=\"row\">\r\n        <th class=\"govuk-table__header\" colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Waste operation details</th>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Waste operation location</td>\r\n        <td class=\"govuk-table__cell\">Deanery Road, Bristol, BS1 5AH</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Waste exemption</td>\r\n        <td class=\"govuk-table__cell\">S2: Storing waste in a secure place</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Waste exemption</td>\r\n        <td class=\"govuk-table__cell\">U9: Using waste to manufacture finished goods</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>",
           "options": {},
           "schema": {}
         },
@@ -162,23 +182,53 @@
           "schema": {}
         }
       ],
-      "next": []
+      "next": [
+        {
+          "path": "/declaration"
+        }
+      ]
     },
     {
       "path": "/declaration",
       "title": "Declaration",
-      "components": [],
-      "next": []
+      "components": [
+        {
+          "type": "Html",
+          "content": "<div class=\"govuk-warning-text\">\r\n  <span class=\"govuk-warning-text__icon\" aria-hidden=\"true\">!</span>\r\n  <strong class=\"govuk-warning-text__text\">\r\n    <span class=\"govuk-warning-text__assistive\">Warning</span>\r\n    You can be prosecuted and fined if you provide false or misleading information\r\n  </strong>\r\n</div>  \r\n\r\n<div class=\"govuk-prose-scope\">\r\n<p>I confirm that:</p>\r\n\r\n  <ul class=\"list-bullet\">\r\n    <li>the information I have provided is true</li>\r\n    <li>the business or organisation carrying out the waste operation has authorised me to provide this information</li>\r\n  </ul>\r\n\r\n<p>\r\n  See the Environment Agency’s <a href=\"/pages/privacy\">privacy policy</a> to find out how it uses personal information\r\n</p>\r\n</div>",
+          "options": {},
+          "schema": {}
+        }
+      ],
+      "next": [
+        {
+          "path": "/confirmation"
+        }
+      ]
     },
     {
       "path": "/incorrect-details",
-      "title": "Change details",
-      "components": [],
-      "next": [
+      "title": "Unable to proceed",
+      "components": [
         {
-          "path": "/contact-ea"
+          "type": "Para",
+          "content": "Currently we can only renew an exemption that is unchanged.\r\nYou can still <a href=\"/applicant-contact\">start a new registration</a>, or <a href=\"/contact-ea\">contact us to change your existing details</a>.",
+          "options": {},
+          "schema": {}
         }
-      ]
+      ],
+      "next": []
+    },
+    {
+      "path": "/confirmation",
+      "components": [
+        {
+          "type": "Html",
+          "content": "<div class=\"govuk-panel govuk-panel--confirmation\">\r\n          <h1 class=\"govuk-panel__title\">\r\n            Application complete\r\n          </h1>\r\n          <div class=\"govuk-panel__body\">\r\n            Your reference is\r\n            <br><strong>WEX001592</strong>\r\n          </div>\r\n        </div>\r\n\r\n        <p class=\"govuk-body\">We have sent you a confirmation email.</p>\r\n\r\n        <h3 class=\"govuk-heading-m\">What happens next</h3>\r\n\r\n        <p class=\"govuk-body\">\r\n          Your business or organisation's details will be processed and appear on the public register within 5 days.\r\n        </p>\r\n        <p class=\"govuk-body\">\r\n          We'll send a renewal reminder when this waste exemption is due to expire.\r\n        </p>\r\n<div class=\"govuk-inset-text\">\r\nWaste exemption registration are subject to checks. Deliberately providing false details, or not complying with exemption rules, can lead to de-registration and prosecution.\r\n</div>\r\n        <p class=\"govuk-body\">\r\n          <a href=\"#\" class=\"govuk-link\">What did you think of this service?</a> (takes 30 seconds)\r\n        </p>",
+          "options": {},
+          "schema": {}
+        }
+      ],
+      "next": []
     }
   ],
   "sections": [
