@@ -67,7 +67,7 @@
           "type": "TextField",
           "name": "enterReg",
           "title": "Waste exemption registration number",
-          "hint": "For example, AAA/BC1234DE/F001",
+          "hint": "For example, WEX123456",
           "schema": {}
         }
       ],
