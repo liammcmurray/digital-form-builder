@@ -109,16 +109,12 @@
         },
         {
           "type": "Para",
-          "content": "CONTINUE BUTTON EMULATES CLINKING LINK IN EMAIL",
+          "content": "<a href=\"/email\">(view email text)</a>",
           "options": {},
           "schema": {}
         }
       ],
-      "next": [
-        {
-          "path": "/check-details"
-        }
-      ]
+      "next": []
     },
     {
       "path": "/check-details",
@@ -224,6 +220,18 @@
         {
           "type": "Html",
           "content": "<div class=\"govuk-panel govuk-panel--confirmation\">\r\n          <h1 class=\"govuk-panel__title\">\r\n            Application complete\r\n          </h1>\r\n          <div class=\"govuk-panel__body\">\r\n            Your reference is\r\n            <br><strong>WEX001592</strong>\r\n          </div>\r\n        </div>\r\n        <p class=\"govuk-body\">We have sent you a confirmation email.</p>\r\n        <h3 class=\"govuk-heading-m\">What happens next</h3>\r\n        <p class=\"govuk-body\">\r\n          Your business or organisation's details will be processed and appear on the public register within 5 days.\r\n        </p>\r\n        <p class=\"govuk-body\">\r\n          We'll send a renewal reminder when this waste exemption is due to expire.\r\n        </p>\r\n<div class=\"govuk-inset-text\">\r\nWaste exemption registration are subject to checks. Deliberately providing false details, or not complying with exemption rules, can lead to de-registration and prosecution.\r\n</div>\r\n        <p class=\"govuk-body\">\r\n          <a href=\"#\" class=\"govuk-link\">What did you think of this service?</a> (takes 30 seconds)\r\n        </p>",
+          "options": {},
+          "schema": {}
+        }
+      ],
+      "next": []
+    },
+    {
+      "path": "/email",
+      "components": [
+        {
+          "type": "Html",
+          "content": "<p>Dear Mr Surname</p>\r\n<p><strong>To access the Waste Exemptions renewal service, use the link below or copy and paste it into your browser:</strong></p>\r\n<a href=\"/check-details\">https://www.gov.uk/guidance/register-your-waste-exemptions-environmental-permits/iff7yi11qzll878uug</a>\r\n<p><strong>This is a one-time link that will expire after 24 hours.</strong></p>\r\n\r\n<h2>Why did I get this email?</h2>\r\n<p>If you did not request access to the waste exemptions renewal service, please forward this email to our phishing team at: <a href=\"#\">digital.security@environment-agency.gov.uk</a>.</p>\r\n\r\n<h2>Need help?</h2>\r\n<p>If you need help renewing or updating your waste exemptions, call the Environment Agency helpline on 03708 506506 (Monday to Friday, 8am to 6pm).</p>\r\n<p>You can also email us at: <a href=\"#\">enquiries@environment-agency.gov.uk</a>.</p>",
           "options": {},
           "schema": {}
         }
