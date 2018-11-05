@@ -22,7 +22,6 @@
     },
     {
       "path": "/options",
-      "title": "Do you want to register, renew, or or change details?",
       "components": [
         {
           "options": {
@@ -52,11 +51,10 @@
     },
     {
       "path": "/enter-reg",
-      "title": "Enter registration number",
       "components": [
         {
-          "type": "InsetText",
-          "content": "This was issued when you initially registered and can be found on any correspondence from us.",
+          "type": "Para",
+          "content": "Enter your waste exemptions registration number, and we will send you an email with a sign-in link.",
           "options": {},
           "schema": {}
         },
@@ -64,10 +62,19 @@
           "options": {
             "classes": "govuk-input--width-10"
           },
+          "schema": {
+            "length": 9
+          },
           "type": "TextField",
           "name": "enterReg",
-          "title": "Waste exemption registration number",
-          "hint": "For example, WEX123456",
+          "title": "Registration number",
+          "hint": "For example, WEX123456"
+        },
+        {
+          "type": "Details",
+          "title": "I cannot find my registration number",
+          "content": "<div class=\"govuk-prose-scope\">\r\n<p>Your registration number is on the email we sent you when you registered your\r\nexemptions, and your renewal letter.</p>\r\n<p>If you cannot find it, call the Environment Agency helpline on 03708 506506\r\n(Monday to Friday, 8am to 6pm).</p>\r\n</div>",
+          "options": {},
           "schema": {}
         }
       ],
@@ -75,7 +82,8 @@
         {
           "path": "/magicLink"
         }
-      ]
+      ],
+      "title": "Enter your registration number"
     },
     {
       "path": "/magicLink",
@@ -89,7 +97,7 @@
         },
         {
           "type": "Html",
-          "content": "<div class=\"govuk-prose-scope\">\r\n<h2>Next steps</h2>\r\n<ul>\r\n<li>Check your email and follow the instructions to log in.</li>\r\n<li>If you can’t see an email from us, please check your Junk folder</li>\r\n</ul>\r\n</div>",
+          "content": "<div class=\"govuk-prose-scope\">\r\n<h2>Next steps</h2>\r\n<ul>\r\n<li>Check your email and follow the instructions to sign in.</li>\r\n<li>If you can’t see an email from us, please check your Bulk/Spam folder</li>\r\n</ul>\r\n</div>",
           "options": {},
           "schema": {}
         },
@@ -118,7 +126,7 @@
     },
     {
       "path": "/check-details",
-      "title": "Check details and renew",
+      "title": "Confirm your waste exemption registration details",
       "components": [
         {
           "type": "Html",
@@ -150,7 +158,7 @@
       "components": [
         {
           "type": "Html",
-          "content": "<div class=\"govuk-prose-scope\">\r\n<p>If you need to:</p>\r\n  <ul class=\"list-bullet\">\r\n      <li>change your contact details</li>\r\n      <li>de-register an activity</li>\r\n      <li>ask questions about your registration</li>\r\n  </ul>\r\n  <p>Call our helpline on  <a href=\"tel:+443708506506\">03708 506506</a></p>\r\n</div>",
+          "content": "<div class=\"govuk-prose-scope\">\r\n<p>If you need to:</p>\r\n  <ul class=\"list-bullet\">\r\n      <li>change your contact details</li>\r\n      <li>update your exemptions</li>\r\n      <li>ask questions about your registration</li>\r\n  </ul>\r\n  <p>Call the Environment Agency helpline on  <a href=\"tel:+443708506506\">03708 506506</a></p>\r\n</div>",
           "options": {},
           "schema": {}
         }
@@ -190,7 +198,7 @@
       "components": [
         {
           "type": "Html",
-          "content": "<div class=\"govuk-warning-text\">\r\n  <span class=\"govuk-warning-text__icon\" aria-hidden=\"true\">!</span>\r\n  <strong class=\"govuk-warning-text__text\">\r\n    <span class=\"govuk-warning-text__assistive\">Warning</span>\r\n    You can be prosecuted and fined if you provide false or misleading information\r\n  </strong>\r\n</div>  \r\n\r\n<div class=\"govuk-prose-scope\">\r\n<p>I confirm that:</p>\r\n\r\n  <ul class=\"list-bullet\">\r\n    <li>the information I have provided is true</li>\r\n    <li>the business or organisation carrying out the waste operation has authorised me to provide this information</li>\r\n  </ul>\r\n\r\n<p>\r\n  See the Environment Agency’s <a href=\"/pages/privacy\">privacy policy</a> to find out how it uses personal information\r\n</p>\r\n</div>",
+          "content": "<div class=\"govuk-warning-text\">\r\n  <span class=\"govuk-warning-text__icon\" aria-hidden=\"true\">!</span>\r\n  <strong class=\"govuk-warning-text__text\">\r\n    <span class=\"govuk-warning-text__assistive\">Warning</span>\r\n    You can be prosecuted and fined up to £5000 if you provide false or misleading information.\r\n  </strong>\r\n</div>\r\n\r\n<div class=\"govuk-prose-scope\">\r\n<p>I confirm that:</p>\r\n\r\n  <ul class=\"list-bullet\">\r\n    <li>the information I have provided is true</li>\r\n    <li>the business or organisation carrying out the waste operation has authorised me to provide this information</li>\r\n  </ul>\r\n\r\n<p>\r\n  <a href=\"https://wasteexemptions.service.gov.uk/pages/privacy\" target=\"_blank\">Privacy, how we use your personal information (opens new tab)</a>\r\n</p>\r\n</div>",
           "options": {},
           "schema": {}
         }
@@ -219,7 +227,7 @@
       "components": [
         {
           "type": "Html",
-          "content": "<div class=\"govuk-panel govuk-panel--confirmation\">\r\n          <h1 class=\"govuk-panel__title\">\r\n            Application complete\r\n          </h1>\r\n          <div class=\"govuk-panel__body\">\r\n            Your reference is\r\n            <br><strong>WEX001592</strong>\r\n          </div>\r\n        </div>\r\n        <p class=\"govuk-body\">We have sent you a confirmation email.</p>\r\n        <h3 class=\"govuk-heading-m\">What happens next</h3>\r\n        <p class=\"govuk-body\">\r\n          Your business or organisation's details will be processed and appear on the public register within 5 days.\r\n        </p>\r\n        <p class=\"govuk-body\">\r\n          We'll send a renewal reminder when this waste exemption is due to expire.\r\n        </p>\r\n<div class=\"govuk-inset-text\">\r\nWaste exemption registration are subject to checks. Deliberately providing false details, or not complying with exemption rules, can lead to de-registration and prosecution.\r\n</div>\r\n        <p class=\"govuk-body\">\r\n          <a href=\"#\" class=\"govuk-link\">What did you think of this service?</a> (takes 30 seconds)\r\n        </p>",
+          "content": "<div class=\"govuk-panel govuk-panel--confirmation\">\r\n          <h1 class=\"govuk-panel__title\">\r\n            Renewal complete\r\n          </h1>\r\n          <div class=\"govuk-panel__body\">\r\n            Your reference is\r\n            <br><strong>WEX123456</strong>\r\n          </div>\r\n        </div>\r\n<div class=\"govuk-prose-scope\">\r\n<div class=\"gem-c-govspeak govuk-govspeak direction-ltr\">\r\n        <p class=\"govuk-body\">We have sent a confirmation email to: xxx@xxx.co.uk</p>\r\n        <h3 class=\"govuk-heading-m\">What happens next</h3>\r\n<ul>\r\n<li>Your organisation's details will appear on the public register within 5 days.</li>\r\n<li>\r\n          We will send you a renewal reminder letter when the exemptions are due to expire.</li>\r\n</ul>\r\n<div class=\"govuk-inset-text\">\r\nWaste exemption registration are subject to checks. Deliberately providing false details, or not complying with exemption rules, can lead to de-registration and prosecution.\r\n</div>\r\n<p class=\"govuk-body\">If you have any queries, contact the Environment Agency helpline on 03708 506506 (Monday to Friday, 8am to 6pm).\r\n        <p class=\"govuk-body\">\r\n          <a href=\"#\" class=\"govuk-link\">What did you think of this service?</a> (takes 30 seconds)\r\n        </p></div></div>",
           "options": {},
           "schema": {}
         }
@@ -231,12 +239,41 @@
       "components": [
         {
           "type": "Html",
-          "content": "<p>Dear Mr Surname</p>\r\n<p><strong>To access the Waste Exemptions renewal service, use the link below or copy and paste it into your browser:</strong></p>\r\n<a href=\"/check-details\">https://www.gov.uk/guidance/register-your-waste-exemptions-environmental-permits/iff7yi11qzll878uug</a>\r\n<p><strong>This is a one-time link that will expire after 24 hours.</strong></p>\r\n\r\n<h2>Why did I get this email?</h2>\r\n<p>If you did not request access to the waste exemptions renewal service, please forward this email to our phishing team at: <a href=\"#\">digital.security@environment-agency.gov.uk</a>.</p>\r\n\r\n<h2>Need help?</h2>\r\n<p>If you need help renewing or updating your waste exemptions, call the Environment Agency helpline on 03708 506506 (Monday to Friday, 8am to 6pm).</p>\r\n<p>You can also email us at: <a href=\"#\">enquiries@environment-agency.gov.uk</a>.</p>",
+          "content": "<p>Dear Mr Surname</p>\r\n<p><strong>To access the Waste Exemptions renewal service, use the link below or copy and paste it into your browser:</strong></p>\r\n<a href=\"/check-details2\">https://www.gov.uk/guidance/register-your-waste-exemptions-environmental-permits/iff7yi11qzll878uug</a>\r\n<p><strong>This is a one-time link that will expire after 24 hours.</strong></p>\r\n\r\n<h2>Why did I get this email?</h2>\r\n<p>If you did not request access to the Waste Exemptions renewal service, please forward this email to our phishing team at: <a href=\"#\">digital.security@environment-agency.gov.uk</a>.</p>\r\n\r\n<h2>Need help?</h2>\r\n<p>If you need help renewing or updating your waste exemptions, call the Environment Agency helpline on 03708 506506 (Monday to Friday, 8am to 6pm).</p>\r\n<p>You can also email us at: <a href=\"#\">enquiries@environment-agency.gov.uk</a>.</p>",
           "options": {},
           "schema": {}
         }
       ],
       "next": []
+    },
+    {
+      "path": "/check-details2",
+      "title": "Confirm your waste exemption registration details",
+      "components": [
+        {
+          "type": "Para",
+          "content": "<div class=\"govuk-prose-scope\"><p>If the information you registered with is still correct, select 'Continue' to confirm.</p>\r\n<p>If you need to edit your organisation's details or exemption, you'll need to start a new registration.</p>\r\n</div>",
+          "options": {},
+          "schema": {}
+        },
+        {
+          "type": "Html",
+          "content": "<table summary=\"check-details-summary-0\"\r\n         class=\"govuk-table summary-table\" role=\"presentation\"\r\n         id=\"check-details-yourcontactdetails-0\"\r\n         caption=\"summary of registration details\">\r\n    <tbody class=\"govuk-table__body\">\r\n      <tr class=\"govuk-table__row\" role=\"row\">\r\n        <th class=\"govuk-table__header\" colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Your contact details</th>\r\n      </tr>\r\n      <tr>\r\n        <td class=\"govuk-table__cell\">Your name</td>\r\n        <td  class=\"govuk-table__cell\">James Devon</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Your business telephone number</td>\r\n        <td class=\"govuk-table__cell\">0117923443</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Your business email</td>\r\n        <td  class=\"govuk-table__cell\">j.devon@aspirewaste.net</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <table summary=\"check-details-summary-1\"\r\n         class=\"govuk-table summary-table\" role=\"presentation\"\r\n         id=\"check-details-businessdetails-1\"\r\n         caption=\"summary of registration details\">\r\n    <tbody class=\"govuk-table__body\">\r\n      <tr class=\"govuk-table__row\" role=\"row\">\r\n        <th class=\"govuk-table__header\" colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Business details</th>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\"> \r\n        <td class=\"govuk-table__cell\">Business or organisation type</td>\r\n        <td class=\"govuk-table__cell\">Individual</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Person responsible for the waste operation</td>\r\n        <td class=\"govuk-table__cell\">Jo Miller</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">  \r\n        <td class=\"govuk-table__cell\">Address of the person responsible</td>\r\n        <td class=\"govuk-table__cell\">Deanery Road, Bristol, BS1 5AH</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <table summary=\"check-details-summary-2\"\r\n         class=\"govuk-table summary-table\" role=\"presentation\"\r\n         id=\"check-details-wasteoperationcontact-2\"\r\n         caption=\"summary of registration details\">\r\n    <tbody class=\"govuk-table__body\">\r\n      <tr class=\"govuk-table__row\" role=\"row\">\r\n        <th class=\"govuk-table__header\" colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Waste operation contact</th>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Name</td>\r\n        <td class=\"govuk-table__cell\">Sarah Miller</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">   \r\n        <td class=\"govuk-table__cell\">Telephone number</td>\r\n        <td class=\"govuk-table__cell\">01179488422</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Address</td>\r\n        <td class=\"govuk-table__cell\">44, Deanery Road, Bristol, BS1 5AH</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Email</td>\r\n        <td class=\"govuk-table__cell\">example.email@inter.net</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <table summary=\"check-details-summary-3\"\r\n         class=\"govuk-table summary-table\" role=\"presentation\"\r\n         id=\"check-details-wasteoperationdetails-3\"\r\n         caption=\"summary of registration details\">\r\n    <tbody class=\"govuk-table__body\">\r\n      <tr class=\"govuk-table__row\"role=\"row\">\r\n        <th class=\"govuk-table__header\" colspan=\"2\" class=\"bold-small\" role=\"columnheader\">Waste operation details</th>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Waste operation location</td>\r\n        <td class=\"govuk-table__cell\">Deanery Road, Bristol, BS1 5AH</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Waste exemption</td>\r\n        <td class=\"govuk-table__cell\">S2: Storing waste in a secure place</td>\r\n      </tr>\r\n      <tr class=\"govuk-table__row\">\r\n        <td class=\"govuk-table__cell\">Waste exemption</td>\r\n        <td class=\"govuk-table__cell\">U9: Using waste to manufacture finished goods</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>",
+          "options": {},
+          "schema": {}
+        },
+        {
+          "type": "Para",
+          "content": "<div class=\"govuk-prose-scope\">\r\n<p><a href=\"/applicant-contact\">Start a new registration.</a></p>\r\n</div>",
+          "options": {},
+          "schema": {}
+        }
+      ],
+      "next": [
+        {
+          "path": "/declaration"
+        }
+      ]
     }
   ],
   "sections": [
@@ -289,17 +326,17 @@
         {
           "text": "Start a new waste exemption registration",
           "value": 1,
-          "description": "Begin the process of registering for an exemption"
+          "description": ""
         },
         {
-          "text": "Renew an exemption that's expiring soon",
+          "text": "Renew an exemption that is expiring soon",
           "value": 2,
-          "description": "Apply for a renewal to your existing exemption if the details - including your personal and company information - have not changed"
+          "description": ""
         },
         {
           "text": "Change the details of an existing registration",
           "value": 3,
-          "description": "Contact us to amend existing details"
+          "description": ""
         }
       ]
     }
